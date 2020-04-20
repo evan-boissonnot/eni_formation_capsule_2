@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jeu.Core.Businesses\Jeu.Core.Businesses.csproj" />
+    <ProjectReference Include="..\Jeu.Core.DTOs\Jeu.Core.DTOs.csproj" />
+    <ProjectReference Include="..\Jeu.Core.Interfaces\Jeu.Core.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
