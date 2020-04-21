@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Jeu.Core.Businesses
 {
-    public class DroideBusiness
+    public class DroideBusiness : IDroideBusiness
     {
         #region Public methods
         /// <summary>

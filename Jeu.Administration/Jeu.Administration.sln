@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Administration.Web.UI", "Jeu.Administration.Web.UI\Jeu.Administration.Web.UI.csproj", "{3F9192BA-226A-4CA0-80F6-0DB82EF6C2D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeu.Administration.Web.UI", "Jeu.Administration.Web.UI\Jeu.Administration.Web.UI.csproj", "{3F9192BA-226A-4CA0-80F6-0DB82EF6C2D0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{F95BC996-4E11-4E74-9C73-6BE8CE44CE53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{1763C17D-5382-4325-9D9D-E0E9936DD9C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Core.Interfaces", "Jeu.Core.Interfaces\Jeu.Core.Interfaces.csproj", "{5DB6F71F-7C6F-4BAE-B30B-45F0DDDB560C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeu.Core.Interfaces", "Jeu.Core.Interfaces\Jeu.Core.Interfaces.csproj", "{5DB6F71F-7C6F-4BAE-B30B-45F0DDDB560C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Core.Businesses", "Jeu.Core.Businesses\Jeu.Core.Businesses.csproj", "{23E96D09-38EF-4201-ABB5-F77D4F6A7447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeu.Core.Businesses", "Jeu.Core.Businesses\Jeu.Core.Businesses.csproj", "{23E96D09-38EF-4201-ABB5-F77D4F6A7447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Core.DTOs", "Jeu.Core.DTOs\Jeu.Core.DTOs.csproj", "{4DEE0451-7548-41C6-B852-68F81238AB2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeu.Core.DTOs", "Jeu.Core.DTOs\Jeu.Core.DTOs.csproj", "{4DEE0451-7548-41C6-B852-68F81238AB2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Core.Web", "Jeu.Core.Web\Jeu.Core.Web.csproj", "{D76F0356-68D0-439F-B547-8FEC58E59DF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeu.Core.Web", "Jeu.Core.Web\Jeu.Core.Web.csproj", "{D76F0356-68D0-439F-B547-8FEC58E59DF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Console.UI", "Jeu.Console.UI\Jeu.Console.UI.csproj", "{54086FF3-6F6E-4FE5-8607-939FA83D61E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeu.Console.UI", "Jeu.Console.UI\Jeu.Console.UI.csproj", "{54086FF3-6F6E-4FE5-8607-939FA83D61E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{60CCF570-2BE3-450F-8BAA-CD04381AA601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu.Tests.Businesses", "Jeu.Tests.Businesses\Jeu.Tests.Businesses.csproj", "{C7829CAE-A1E7-486B-B3F1-B6A1D6DDC1AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{54086FF3-6F6E-4FE5-8607-939FA83D61E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54086FF3-6F6E-4FE5-8607-939FA83D61E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54086FF3-6F6E-4FE5-8607-939FA83D61E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7829CAE-A1E7-486B-B3F1-B6A1D6DDC1AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7829CAE-A1E7-486B-B3F1-B6A1D6DDC1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7829CAE-A1E7-486B-B3F1-B6A1D6DDC1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7829CAE-A1E7-486B-B3F1-B6A1D6DDC1AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{4DEE0451-7548-41C6-B852-68F81238AB2A} = {F95BC996-4E11-4E74-9C73-6BE8CE44CE53}
 		{D76F0356-68D0-439F-B547-8FEC58E59DF4} = {F95BC996-4E11-4E74-9C73-6BE8CE44CE53}
 		{54086FF3-6F6E-4FE5-8607-939FA83D61E2} = {1763C17D-5382-4325-9D9D-E0E9936DD9C3}
+		{C7829CAE-A1E7-486B-B3F1-B6A1D6DDC1AC} = {60CCF570-2BE3-450F-8BAA-CD04381AA601}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA77464F-B2EA-49C9-A6BB-1D03F4247731}
