@@ -1,4 +1,5 @@
 ﻿using Jeu.Core.DTOs;
+using Jeu.Core.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
