@@ -9,5 +9,21 @@ namespace Jeu.Core.DTOs
     /// </summary>
     public abstract class BaseItem
     {
+        #region Constructors
+        public BaseItem() { }
+
+        public BaseItem(int id) 
+        {
+            this.Id = id;
+        }
+        #endregion
+
+        #region Properties
+        /// <summary>
+        /// Id représentant une instance d'un item  
+        /// (à priori il faudra gérer l'autoincrément)
+        /// </summary>
+        public int Id { get; set; }
+        #endregion
     }
 }
