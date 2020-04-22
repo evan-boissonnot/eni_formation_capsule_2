@@ -13,5 +13,12 @@ namespace Jeu.Core.Interfaces
         /// </summary>
         /// <returns></returns>
         IEnumerable<Droide> GetList();
+
+        /// <summary>
+        /// Ajout d'un droide en base
+        /// </summary>
+        /// <param name="item">Item non null et renseigné</param>
+        /// <returns>Retourne le même item, avec l'id > 0</returns>
+        Droide AddOne(Droide item);
     }
 }

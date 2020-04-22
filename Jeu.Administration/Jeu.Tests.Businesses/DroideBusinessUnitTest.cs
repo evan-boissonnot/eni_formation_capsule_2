@@ -1,4 +1,5 @@
 using Jeu.Core.Businesses;
+using Jeu.Core.Interfaces;
 using System;
 using System.Linq;
 using Xunit;

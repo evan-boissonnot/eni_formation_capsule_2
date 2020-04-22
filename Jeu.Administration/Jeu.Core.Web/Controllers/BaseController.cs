@@ -36,6 +36,17 @@ namespace Jeu.Core.Web.Controllers
 
             return this.View(viewModel);
         }
+
+        public IActionResult Create()
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Droide item)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
         #region Internal methods

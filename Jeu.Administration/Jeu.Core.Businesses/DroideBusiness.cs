@@ -9,6 +9,10 @@ namespace Jeu.Core.Businesses
 {
     public class DroideBusiness : IDroideBusiness
     {
+        #region Constants
+        const int NB_POINTS_VIE_MAX = 100;
+        #endregion
+
         #region Public methods
         /// <summary>
         /// Ramène toute la liste (complète) des droides
@@ -18,8 +22,8 @@ namespace Jeu.Core.Businesses
         {
             return new List<Droide>()
             {
-                new Droide(1, "A1", 100),
-                new Droide(2, "A2", 100)
+                new Droide(1, "A1", NB_POINTS_VIE_MAX),
+                new Droide(2, "A2", NB_POINTS_VIE_MAX)
             };
         }
         #endregion
