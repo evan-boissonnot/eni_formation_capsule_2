@@ -6,11 +6,12 @@ using Jeu.Core.Businesses;
 using Jeu.Core.DTOs;
 using Jeu.Core.Interfaces;
 using Jeu.Core.Web.Controllers;
+using Jeu.Core.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Jeu.Administration.Web.UI.Controllers
 {
-    public class DroideController : BaseController<List<BaseItem>, BaseItem>
+    public class DroideController : BaseController<Droide>
     {
         private IDroideBusiness _business = null;
 
@@ -21,12 +22,19 @@ namespace Jeu.Administration.Web.UI.Controllers
         }
         #endregion
 
-        #region Public actions
-        public IActionResult Index()
+        #region Protected methods
+        protected override BaseListViewModel<Droide> DoIndex()
         {
-            //this.ViewModel
+            const int nbPointsDeVies = 100;
+            DroideListViewModel viewModel = new DroideListViewModel();
 
-            return View();
+            viewModel.Item = new List<Droide>()
+            {
+                new Droide(1, "aaaa", nbPointsDeVies),
+                new Droide(2, "bbbb", nbPointsDeVies)
+            };
+
+            return viewModel;
         }
         #endregion
     }

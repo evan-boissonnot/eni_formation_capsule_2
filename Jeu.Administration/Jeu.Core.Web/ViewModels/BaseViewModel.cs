@@ -14,6 +14,6 @@ namespace Jeu.Core.Web.ViewModels
         /// <summary>
         /// Item du view model (en lecture / écriture)
         /// </summary>
-        T Item { get; set; }
+        public T Item { get; set; }
     }
 }
