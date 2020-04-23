@@ -11,9 +11,15 @@ namespace Jeu.Core.Businesses
     {
         #region Constants
         const int NB_POINTS_VIE_MAX = 100;
+
         #endregion
 
         #region Public methods
+        public Droide AddOne(Droide item)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Ramène toute la liste (complète) des droides
         /// </summary>

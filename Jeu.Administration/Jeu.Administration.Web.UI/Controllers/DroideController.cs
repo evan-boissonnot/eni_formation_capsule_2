@@ -32,6 +32,14 @@ namespace Jeu.Administration.Web.UI.Controllers
 
             return viewModel;
         }
+
+        protected override BaseViewModel<Droide> DoCreate(Droide item)
+        {
+            return new DroideViewModel()
+            {
+                Item = item
+            };
+        }
         #endregion
     }
 }

@@ -37,19 +37,28 @@ namespace Jeu.Core.Web.Controllers
             return this.View(viewModel);
         }
 
-        public IActionResult Create()
+        public virtual IActionResult Create()
         {
-            throw new NotImplementedException();
+            return this.View();
         }
 
         [HttpPost]
-        public IActionResult Create(Droide item)
+        public IActionResult Create(T item)
         {
-            throw new NotImplementedException();
+            var viewModel = this.DoCreate(item);
+
+            return this.View(viewModel);
         }
         #endregion
 
         #region Internal methods
+        /// <summary>
+        /// Doit être renseignée pour préparer et gérer la création d'un item en base de données
+        /// </summary>
+        /// <param name="item">Item non null</param>
+        /// <returns></returns>
+        protected abstract BaseViewModel<T> DoCreate(T item);
+
         /// <summary>
         /// Doit être renseignée, pour préciser le view model et son contenu à afficher dans l'index
         /// </summary>
