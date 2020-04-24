@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Jeu.Core.Businesses\Jeu.Core.Businesses.csproj" />
+    <ProjectReference Include="..\Jeu.Core.Business.WithEntities\Jeu.Core.Business.WithEntities.csproj" />
     <ProjectReference Include="..\Jeu.Core.DTOs\Jeu.Core.DTOs.csproj" />
     <ProjectReference Include="..\Jeu.Core.Interfaces\Jeu.Core.Interfaces.csproj" />
     <ProjectReference Include="..\Jeu.Core.Web\Jeu.Core.Web.csproj" />

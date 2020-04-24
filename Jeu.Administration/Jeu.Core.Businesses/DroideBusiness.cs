@@ -11,7 +11,6 @@ namespace Jeu.Core.Businesses
     {
         #region Constants
         const int NB_POINTS_VIE_MAX = 100;
-
         #endregion
 
         #region Public methods

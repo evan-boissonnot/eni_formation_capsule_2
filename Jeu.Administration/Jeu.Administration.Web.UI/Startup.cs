@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Jeu.Core.Businesses;
+using Jeu.Core.Business.WithEntities;
+using Jeu.Core.Business.WithEntities.Data;
 using Jeu.Core.Interfaces;
+using Jeu.Administration.Web.UI.Tools;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,11 +23,9 @@ namespace Jeu.Administration.Web.UI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IDroideBusiness, DroideBusiness>();
-
+            services.DefineDependencyInjections();
             services.AddControllersWithViews();
         }
 
